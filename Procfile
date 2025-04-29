@@ -1,3 +1,4 @@
-web: gunicorn mobile_fan.wsgi:application
+web: gunicorn mobile_fan.wsgi --log-file -
+
 
 
