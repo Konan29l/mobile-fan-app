@@ -1,0 +1,56 @@
+<!--CONTACTANOS-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fangteshia</title>
+    <link rel="stylesheet" href="{% static 'css/Contact.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'backend.js' %}" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!--BANNER-->
+    <header class="banner">
+        <img src="{% static 'imagenes/nuevo_logo.png' %}" alt="Fangteshia mobile" class="logo">
+        <nav class="navbar">
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="index">Catálogo</a></li>
+                <li><a href="nosotros">Sobre Nosotros</a></li>
+                <li><a href="contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="imagen-contacto">
+        <img src="{% static 'imagenes/unnamed.jpg' %}" alt="Contactenos">
+
+    </div>
+    <!--FORMULARIO-->
+    <div class="container-contact">
+        <div class="contact-form">
+            <h2>Contáctanos</h2>
+            <form class="contactarnos">
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="apellido" placeholder="Apellido" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <textarea name="mensaje" placeholder="Observaciones" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+<!--UBICACION-->
+        </div>
+        <div class="ubicacion">
+            <h2>Nuestra ubicación</h2>
+            <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093704!2d144.95373631531856!3d-37.81627974202186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d5df1f0b1a1%3A0x5045675218ce6e0!2sMelbourne%2C%20Australia!5e0!3m2!1ses!2ses!4v1633000000000!5m2!1ses!2ses"
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+
+        </div>
+    </div>
+
+</body>
+</html>

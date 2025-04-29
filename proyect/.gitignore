@@ -1,0 +1,10 @@
+# Ignorar archivos de Python
+*.pyc
+__pycache__/
+
+# Ignorar archivos de Django
+db.sqlite3
+/static/
+
+# Ignorar archivos de entorno
+.env

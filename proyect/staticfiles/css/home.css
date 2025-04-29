@@ -1,0 +1,245 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    background-color: #107a9b;
+    font-family: "roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del encabezado */
+.banner {
+    background-color: #008cba;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Evita que el contenido se desborde */
+    margin: 5% auto;
+    width: 80%;
+    border-radius: 15px;
+    gap: 20px; /* Espacio entre el logo y la barra */
+}
+
+/* Logo */
+.logo {
+    width: 150px; /* Mantiene el logo grande */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+/* Contenedor del menú */
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+/* Lista del menú */
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden si no caben */
+}
+
+/* Elementos del menú */
+.navbar li {
+    margin: 0;
+}
+
+/* Enlaces del menú */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover */
+.navbar a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 1024px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 300px; /* Reduce el tamaño del logo en pantallas pequeñas */
+        margin-bottom: 50px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Elementos del menú */
+.navbar li {
+    margin: 0;
+}
+
+/* Enlaces del menú */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto hover */
+.navbar a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .logo {
+        max-height: 70px;
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* Elementos de la lista */
+.navbar li {
+    margin: 0 20px;
+}
+
+/* Enlaces del menú */
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+/* Efecto al pasar el mouse */
+.navbar a:hover {
+    background-color: #e0e0e0;
+}
+
+/* Estilos de la imagen del banner */
+.banner-img {
+    text-align: center;
+    margin: auto;
+    margin-top: 7%;
+}
+
+/* Título principal */
+.titulo-banner h2 {
+    margin-top: 5%;
+    font-size: 30px;
+    font-family: "roboto", sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Subtítulo */
+.sub-banner p {
+    margin-top: -1%;
+    font-size: 30px;
+    font-family: "roboto", sans-serif;
+    color: rgba(247, 250, 250, 0.966);
+    text-align: center;
+}
+
+/* Estilos del video */
+.welcome-video {
+    object-fit: cover;
+    position: relative;
+    width: 52%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+/* Contenedor del video */
+.video-container {
+    width: 100%;
+    max-width: 1200px;
+    background: #107a9b;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Asegura que el botón esté debajo */
+    align-items: center;
+    gap: 20px; /* Espacio entre el video y el botón */
+    margin: auto;
+}
+
+/* Estilos del botón de compra */
+.buy-button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #0c0c0c;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.buy-button:hover {
+    background-color: #999d9e;
+}
+
+/* Media Query para pantallas más pequeñas */
+@media (max-width: 734px) {
+    .banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .welcome-video {
+        width: 90%;
+    }
+} 

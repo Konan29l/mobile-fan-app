@@ -1,0 +1,122 @@
+<!--administrador-->
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Móviles</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'Imagenes/nuevo_logo.png' %}" alt="Logo de la tienda">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="index">Catálogo</a></li>
+                <li><a href="nosotros">Sobre Nosotros</a></li>
+                <li><a href="contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+        <div class="usuario-activo">
+            <img src="{% static 'Imagenes/apoyo.png' %}" alt="Logo de usuario">
+            <span>Administrador</span>
+        </div>
+    </header>
+<!--BANNER-->
+    <section class="banner">
+        <img src="{% static 'Imagenes/banner.jpg' %} " alt="iPhone 16 Pro">
+    </section>
+    <div class="contenedor-principal">
+        <section class="filtros">
+            <h3>Editar Catálogo <img src="{% static 'Imagenes/agregar.png' %}" height="15" width="15"></h3>
+            <h4>Marca</h4>
+            <ul>
+                <li>iPhone <img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"> 
+                </li>
+                <li> Xiaomi<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+                <li>Samsung<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+                <li>Motorola<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+            </ul>
+            <h4>Capacidad</h4>
+            <ul>
+                <li> 8GB<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+                <li>32GB<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+                <li> 64GB<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+                <li>128GB<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+                <li> 256GB<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+                <li>512GB<img src="{% static 'Imagenes/borrar.png' %}" height="15" width="15"> 
+                    <img src="{% static 'Imagenes/editar.png' %}" height="15" width="15"></li>
+            </ul>
+        </section>
+        <main>
+            <div class="productos">
+                <div class="producto" data-marca="iphone" data-capacidad="128gb">
+                    <img src="{% static 'Imagenes/iphone15.jpg' %}" alt="iPhone 15">
+                    <p>iPhone 15 5G 128Gb</p>
+                    <p>$3.599.000</p>
+                    <p></p>
+                    
+                </div>
+                <div class="producto" data-marca="motorola" data-capacidad="8gb">
+                    <img src="{% static 'Imagenes/motoG34.jpg' %}" alt="Moto G34">
+                    <p>Moto G34 8Gb</p>
+                    <p>$699.000</p>
+                </div>
+                <div class="producto" data-marca="samsung" data-capacidad="512gb">
+                    <img src="{% static 'Imagenes/samsungA14.jpg' %}" alt="Samsung A14">
+                    <p>Samsung Galaxy A14 512Gb</p>
+                    <p>$599.000</p>
+                </div>
+                <div class="producto" data-marca="xiaomi" data-capacidad="256gb">
+                    <img src="{% static 'Imagenes/xiaomiRedmiNote12.jpg' %}" alt="Xiaomi Redmi Note 12">
+                    <p>Xiaomi Redmi Note 12 128Gb</p>
+                    <p>$499.000</p>
+                </div>
+                <div class="producto" data-marca="oppo" data-capacidad="256gb">
+                    <img src="{% static 'Imagenes/oppoA60.jpg' %}" alt="Oppo A60">
+                    <p>Oppo A60 256Gb</p>
+                    <p>$1.599.000</p>
+                </div>
+                <div class="producto" data-marca="zte" data-capacidad="64gb">
+                    <img src="{% static 'Imagenes/zteBladeA51.jpg' %}" alt="ZTE Blade A51">
+                    <p>ZTE Blade A51 64Gb</p>
+                    <p>$549.000</p>
+                </div>
+                <div class="producto" data-marca="motorola" data-capacidad="32gb">
+                    <img src="{% static 'Imagenes/motorolaE22i.jpg' %}" alt="Motorola E22i">
+                    <p>Motorola E22i 32Gb</p>
+                    <p>$599.000</p>
+                </div>
+                <div class="producto" data-marca="iphone" data-capacidad="128gb">
+                    <img src="{% static 'Imagenes/iphone13.jpg' %}" alt="iPhone 13 Pro">
+                    <p>iPhone 13 Pro 128Gb</p>
+                    <p>$2.990.000</p>
+                </div>
+                <div class="producto" data-marca="samsung" data-capacidad="128gb">
+                    <img src="{% static 'Imagenes/samsungA22.jpg' %}" alt="Samsung A22">
+                    <p>Samsung A22 5G 128Gb</p>
+                    <p>$399.000</p>
+                </div>
+                <div class="producto" data-marca="motorola" data-capacidad="128gb">
+                    <img src="{% static 'Imagenes/motoG84.jpg' %}" alt="Moto G84">
+                    <p>Moto G84 128Gb</p>
+                    <p>$799.000</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

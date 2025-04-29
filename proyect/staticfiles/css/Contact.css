@@ -1,0 +1,177 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+    background-color: #107a9b;
+    font-family: "roboto", sans-serif;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    
+}
+
+body, html {
+    overflow: visible;
+}
+
+.banner {
+    background-color: #008bba1f;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap; 
+    margin: 5% auto;
+    width: 80%;
+    border-radius: 15px;
+    gap: 20px; 
+}
+
+.logo {
+    width: 150px; 
+    height: auto; 
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.navbar {
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 15px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    width: 8px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap; 
+}
+
+.navbar li {
+    margin: 0;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #e0e0e0;
+}
+
+
+.container-contact {
+    margin-top: 3%;
+    display: flex;
+    gap: 20px; 
+    background: #107a9b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.contact-form, .ubicacion {
+    position: relative;
+    z-index: 1;
+    background-color: #dbd8d8;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2), 0 5px 5px 0 rgb(0, 0, 0, 0.24);
+    border-radius: 10px;
+    flex: 1;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+
+.contact-form input {
+    font-family: "roboto", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2), 0 2px 2px;
+
+}
+
+.contact-form textarea {
+    font-family: "roboto", sans-serif;
+    outline: 0;
+    background: #ffffff;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgb(0, 0, 0, 0.2), 0 2px 2px;
+
+}
+
+.contact-form button {
+    font-family: "roboto", sans-serif;
+    background-color: black;
+    color: white;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    font-size: 15px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+
+.contact-form button:hover,.contact-form button:active,.contact-form button:focus {
+    background: #107a9b;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: "roboto", sans-serif;
+    color: rgb(8, 8, 8);
+    align-items: center;
+    text-align: center;
+    overflow: visible;
+}
+
+iframe {
+    width: 100%;
+    max-width: 400px; 
+    height: 300px;
+}
+
+
+
+.imagen-contacto img {
+    margin-top: -70px;
+    width: 100%; 
+    height: 30vh;
+    object-fit: cover; 
+    border-radius: 10px; 
+}

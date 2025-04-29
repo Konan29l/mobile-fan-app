@@ -1,0 +1,106 @@
+{% load static %}
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0077A8;
+        }
+        .header {
+            background-color: #0077A8;
+            padding: 20px;
+            text-align: left;
+        }
+        .header img {
+            width: 180px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin-left: 20px;
+        }
+        .nav {
+            background-color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+            padding: 5px;
+        }
+        .container {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .title {
+            font-size: 48px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        .user {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+        }
+        .user img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .status {
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="{% static 'Imagenes/nuevo_logo.png' %}" alt="Logo">
+    </div>
+    <div class="user">
+        <img src="{% static 'imagenes/usuario-logo.png' %}" alt="Usuario">
+        <div>
+            <p>Usuario</p>
+            <p class="status">Activo</p>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="home">Home</a>
+        <a href="index">Catalogo</a>
+        <a href="nosotros">Sobre nosotros</a>
+        <a href="conctacto">Contactanos</a>
+    </div>
+    <div class="container">
+        <div class="title">Sobre nosotros</div>
+        <div class="section">
+            <h2>Misión ▼</h2>
+            <p>Facilitar el acceso a la tecnología móvil más innovadora y de calidad, ofreciendo una experiencia de compra en línea segura, confiable y personalizada. Nos comprometemos a brindar un amplio catálogo de celulares y accesorios, precios competitivos y un servicio al cliente excepcional, satisfaciendo las necesidades y expectativas de nuestros clientes</p>
+        </div>
+        <br>
+        <br>
+        <div class="section">
+            <h2>Visión ▼</h2>
+            <p>Convertirnos en la plataforma líder en el mercado de venta de celulares en línea, reconocida por nuestra excelencia en la atención al cliente, la variedad de productos y la innovación constante. Buscamos ser el referente para los consumidores que buscan adquirir tecnología móvil de manera fácil, rápida y segura.</p>
+        </div>
+    </div>
+</body>
+</html>

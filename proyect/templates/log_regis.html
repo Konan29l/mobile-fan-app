@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fangteshia Mobile</title>
+    <link rel="stylesheet" href="{% static 'css/log_reg.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{% static 'js/backend.js' %}" defer></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body class="fondo">
+
+    <div class="login-p">
+        <div class="form">
+            <!--Logo-->
+            <div  class="container">
+                <img src="{% static 'imagenes/logoos.png' %}" alt="logo" class="logo">
+            </div>
+            <ul></ul>
+            <!--Logo-->
+            <form class="registro-form">
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <input type="password" placeholder="Confirmar contraseña">
+                <input type="text" placeholder="Email">
+                <button>Registrar</button>
+                <p class="message">Ya estas registrado? <a href="#">Inicia sesión</a></p>
+            </form>
+            <form class="login-form">
+                <input type="text" placeholder="Usuario">
+                <input type="password" placeholder="Contraseña">
+                <button>Iniciar sesión</button>
+                <p class="message">No tienes cuenta? <a href="#">Crea tu cuenta </a> </p>
+                <p class="message">O conectate con </p>
+
+            <div class="iconos-redes">
+                <a href="https://workspace.google.com/intl/es-419/gmail/" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>    
+    
+                <a href="https://www.facebook.com/" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a> 
+    
+                <a href="https://www.instagram.com/accounts/login/?next=%2Ftu-usuario%2F&source=desktop_nav" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a> 
+            </div>
+
+            </div>      
+
+            </form>
+            
+    
+    </div>
+
+    
+</body>
+</html>
