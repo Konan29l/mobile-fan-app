@@ -10,7 +10,7 @@ services:
     name: proyect
     runtime: python
     buildCommand: './build.sh'
-    startCommand: 'python -m uvicorn proyect.asgi:application --reload' 
+    startCommand: 'python -m uvicorn mobile_fan.asgi:application --reload' 
     envVars:
       - key: DATABASE_URL
         fromDatabase:
