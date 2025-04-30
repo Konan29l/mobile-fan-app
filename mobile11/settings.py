@@ -27,9 +27,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config('SECRET_KEY', default='django-insecure-eg+a6^w7vqa(vb_*w$s_55jmtbntf@h2t#6=ghe*7^z+84ck$s')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = config('DEBUG', default=False, cast=bool)
+DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['*'] #host agregado 
+ALLOWED_HOSTS = ['https://mobile-fan-app.onrender.com'] #host agregado 
 
 
 # Application definition
@@ -90,9 +90,10 @@ AUTHENTICATION_BACKENDS = [
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',  # Si no deseas tener una base de datos local, puedes quitar esto también
+        'NAME': ':memory:',  # Usar base de datos en memoria
     }
 }
+
 
 
 
