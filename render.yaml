@@ -3,15 +3,15 @@ services:
   - type: web
     name: mobile-fan-app
     env: python
-    buildCommand: ""
-    startCommand: gunicorn mi_proyecto.wsgi:application
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    startCommand: gunicorn mobile11.wsgi:application
     plan: free
 =======
 services:
   - type: web
     name: mobile-fan-app
     env: python
-    buildCommand: ""
-    startCommand: gunicorn mi_proyecto.wsgi:application
+    buildCommand: "pip install -r requirements.txt && python manage.py collectstatic --noinput"
+    startCommand: gunicorn mobile11.wsgi:application
     plan: free
 >>>>>>> 6b4653f97075c782780c4b915fbaf3fe1a058b95
