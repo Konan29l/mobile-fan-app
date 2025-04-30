@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'admi.apps.AdmiConfig',
-    'bootstrap4',
+    'django_bootstrap4',
 ]
 
 SITE_ID = 1 #Agredado
