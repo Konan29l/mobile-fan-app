@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📱 Fangteshia Mobile
 
 **Fangteshia Mobile** es una tienda en línea especializada en la venta de dispositivos móviles de diferentes marcas y capacidades. Esta aplicación web permite a los usuarios navegar por un catálogo de productos, conocer información sobre la empresa y contactarse fácilmente mediante un formulario.
@@ -51,3 +52,6 @@ Formulario de contacto donde el usuario puede:
    
 8. Accede desde el navegador
    http://127.0.0.1:8000
+=======
+# mobile-fan-app
+>>>>>>> 6b4653f97075c782780c4b915fbaf3fe1a058b95
