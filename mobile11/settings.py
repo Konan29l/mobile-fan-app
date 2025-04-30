@@ -29,7 +29,8 @@ SECRET_KEY = config('SECRET_KEY', default='django-insecure-eg+a6^w7vqa(vb_*w$s_5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=True, cast=bool)
 
-ALLOWED_HOSTS = ['https://mobile-fan-app.onrender.com'] #host agregado 
+ALLOWED_HOSTS = ['mobile-fan-app.onrender.com', 'localhost', '127.0.0.1']
+ 
 
 
 # Application definition
